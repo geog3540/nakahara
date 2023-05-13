@@ -58,13 +58,10 @@
 
 
       <div id="observablehq-571b382c">
-        <p class="card-text">The following maps show the geographical destribution of teachers who were trained at the Oswego Primary Teachers Training School, more commonly known as the Oswego Normal School, NY, in the late 19th century. The first two maps are choropleth maps and the last one is a point symbol map. To see the actual number of graduates in a particular state, hover over the state. </p>
-        <h2 class="my-4">Geographic Distribution of Oswego Normal School Graduates in Two Time Periods</h2>
+        <p class="card-text">Historians of American education have argued that many Eastern women traveled to the West to teach in the mid- to late 19th century. Is this interpretation accurate? The following choropleth maps show the geographic destribution of teachers trained at the Oswego Primary Teachers Training School, better known as the Oswego Normal School, NY, in the late 19th century. To see the actual number of graduates in a particular state, hover over the state. </p>
         <div class="observablehq-choropleth"></div>
         <div class="observablehq-choropleth2"></div>
-        <h2 class="my-4">Change in Geographic Distribution of Graduates Over Two Time Periods</h2>
-        <div class="observablehq-symbolLegend"></div>
-        <div class="observablehq-graduatedSymbols"></div>
+        <p class="card-text">The two maps show that the majority of graduates stayed in New York and neighboring states. Although there are limitations to the quality of the data, it appears that Oswego graduates were not very motivated to teach in the Far West. These findings should caution scholars against overemphasizing the presence of women teachers who migrated to the West.</p>
       </div>
       <script type="module">
       import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -72,8 +69,6 @@
       (new Runtime).module(define, name => {
         if (name === "choropleth") return Inspector.into("#observablehq-571b382c .observablehq-choropleth")();
         if (name === "choropleth2") return Inspector.into("#observablehq-571b382c .observablehq-choropleth2")();
-        if (name === "symbolLegend") return Inspector.into("#observablehq-571b382c .observablehq-symbolLegend")();
-        if (name === "graduatedSymbols") return Inspector.into("#observablehq-571b382c .observablehq-graduatedSymbols")();
       });
     </script>
 
